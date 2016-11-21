@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document-DespatchAdvice>
+	<DespatchAdvice-Header>
+		<DespatchAdviceNumber>РНк-Т00002</DespatchAdviceNumber> <!--Номер накладной указан в теге НомерДок-->
+		<DespatchAdviceDate>2015-04-30</DespatchAdviceDate> <!--Дата накладной указана в теге ДатаДок-->
+		<EstimatedDeliveryDate>2015-05-03</EstimatedDeliveryDate> <!--Дата предполагаемой поставки указана в теге ДатаПоставки-->
+		<BuyerOrderNumber>ЗаказТест_001</BuyerOrderNumber> <!--Номер заказа указан в теге Основание, до первого пробела-->
+		<DocumentFunctionCode>9</DocumentFunctionCode> <!--Просто оставить, как есть-->
+		<DocumentNameCode>351</DocumentNameCode> <!--Просто оставить, как есть-->
+	</DespatchAdvice-Header>
+	<Document-Parties>
+		<Sender>
+			<ILN>4607938319991</ILN> <!--Находится в теге Фирма, атрибут GLN-->
+		</Sender>
+		<Receiver>
+			<ILN>1234567891032</ILN> <!--Находится в теге Клиент, атрибут GLN-->
+		</Receiver>
+	</Document-Parties>
+	<DespatchAdvice-Parties>
+		<Buyer>
+			<ILN>1234567891032</ILN> <!--Находится в теге Клиент, атрибут GLN-->
+		</Buyer>
+		<Seller>
+			<ILN>4607938319991</ILN> <!--Находится в теге Фирма, атрибут GLN-->
+		</Seller>
+		<DeliveryPoint>
+			<ILN>139159159159</ILN> <!--Находится в теге АдрДоставки, атрибут GLN-->
+		</DeliveryPoint>
+	</DespatchAdvice-Parties>
+	<DespatchAdvice-Consignment>
+		<Packing-Sequence>
+			<Line>
+				<Line-Item>
+					<LineNumber>1</LineNumber> <!--Номер по порядку-->
+					<SupplierItemCode>0040103</SupplierItemCode> <!--Тег Товар, атрибут Код-->
+					<ItemDescription>Тени двойные компактные "EYE DESIGNER" т.03</ItemDescription> <!--Тег Товар, текст после пробелов-->
+					<QuantityDespatched>48</QuantityDespatched> <!--Количество отгруженного-->
+					<UnitOfMeasure>PCE</UnitOfMeasure> <!--Единица измерения-->
+					<UnitNetPrice>55.93</UnitNetPrice> <!--Цена за единицу без НДС, указана в теге Цена-->
+					<UnitGrossPrice>66</UnitGrossPrice> <!--Цена за единицу с НДС-->
+					<TaxRate>18</TaxRate> <!--Процентная ставка НДС-->
+					<NetAmount>2684.75</NetAmount> <!--Сумма без НДС-->
+					<TaxAmount>483.25</TaxAmount> <!--Сумма НДС-->
+					<GrossAmount>3168.00</GrossAmount> <!--Сумма с НДС-->
+				</Line-Item>
+			</Line>
+			<Line>
+				<Line-Item>
+					<LineNumber>2</LineNumber>
+					<SupplierItemCode>00497100</SupplierItemCode>
+					<ItemDescription>Компактные тени для век т.100 "LUMINYS SILK" белый</ItemDescription>
+					<QuantityDespatched>168</QuantityDespatched>
+					<UnitOfMeasure>PCE</UnitOfMeasure>
+					<UnitNetPrice>239.58</UnitNetPrice>
+					<UnitGrossPrice>282.71</UnitGrossPrice>
+					<TaxRate>18</TaxRate>
+					<NetAmount>40250.24</NetAmount>
+					<TaxAmount>7245.04</TaxAmount>
+					<GrossAmount>47495.28</GrossAmount>
+				</Line-Item>
+			</Line>
+			<Line>
+				<Line-Item>
+					<LineNumber>3</LineNumber>
+					<SupplierItemCode>0041801</SupplierItemCode>
+					<ItemDescription>Тушь объем и разделение "Diva's Lashes" т.01 черная</ItemDescription>
+					<QuantityDespatched>48</QuantityDespatched>
+					<UnitOfMeasure>PCE</UnitOfMeasure>
+					<UnitNetPrice>231.86</UnitNetPrice>
+					<UnitGrossPrice>273.6</UnitGrossPrice>
+					<TaxRate>18</TaxRate>
+					<NetAmount>11129.49</NetAmount>
+					<TaxAmount>2003.31</TaxAmount>
+					<GrossAmount>13132.80</GrossAmount>
+				</Line-Item>
+			</Line>
+			<Line>
+				<Line-Item>
+					<LineNumber>4</LineNumber>
+					<SupplierItemCode>048901</SupplierItemCode>
+					<ItemDescription>Карандаш д/век "TRUE EYES" т.01 черный</ItemDescription>
+					<QuantityDespatched>24</QuantityDespatched>
+					<UnitOfMeasure>PCE</UnitOfMeasure>
+					<UnitNetPrice>150.71</UnitNetPrice>
+					<UnitGrossPrice>177.84</UnitGrossPrice>
+					<TaxRate>18</TaxRate>
+					<NetAmount>3617.08</NetAmount>
+					<TaxAmount>651.08</TaxAmount>
+					<GrossAmount>4268.16</GrossAmount>
+				</Line-Item>
+			</Line>
+			<Line>
+				<Line-Item>
+					<LineNumber>5</LineNumber>
+					<SupplierItemCode>0021503</SupplierItemCode>
+					<ItemDescription>Губная помада "Natural Chic" т.03</ItemDescription>
+					<QuantityDespatched>24</QuantityDespatched>
+					<UnitOfMeasure>PCE</UnitOfMeasure>
+					<UnitNetPrice>220.27</UnitNetPrice>
+					<UnitGrossPrice>259.92</UnitGrossPrice>
+					<TaxRate>18</TaxRate>
+					<NetAmount>5286.51</NetAmount>
+					<TaxAmount>951.57</TaxAmount>
+					<GrossAmount>6238.08</GrossAmount>
+				</Line-Item>
+			</Line>
+		</Packing-Sequence>
+	</DespatchAdvice-Consignment>
+	<DespatchAdvice-Summary>
+		<TotalPSequence>1</TotalPSequence> <!--Всегда "1" (количество поставок)-->
+		<TotalLines>5</TotalLines> <!--Количество товарных линий в документе-->
+		<TotalGoodsDespatchedAmount>312</TotalGoodsDespatchedAmount> <!--Всего товара к поставке-->
+	</DespatchAdvice-Summary>
+</Document-DespatchAdvice>
+
+
+
+
+
+
+
+
+
+
